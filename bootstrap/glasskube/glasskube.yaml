@@ -9940,6 +9940,7 @@ spec:
         - --leader-elect
         command:
         - /package-operator
+        image: ghcr.io/glasskube/package-operator:v0.16.0
         livenessProbe:
           httpGet:
             path: /healthz
@@ -10179,4 +10180,3 @@ metadata:
 spec:
   url: https://packages.dl.glasskube.dev/packages
 status: {}
-
